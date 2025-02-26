@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.messagebox import *
 
 def click(event):
   root["bg"] = "red"
@@ -6,6 +7,7 @@ def click(event):
   new_width = root.winfo_width() + 300
   new_x = root.winfo_x() - 50
   root.geometry(f"{new_width}x100+{new_x}+{new_y}")
+  showinfo("", "Ми вивчаємо програмування!")
 
 root = Tk()
 root["bg"] = "gray"
